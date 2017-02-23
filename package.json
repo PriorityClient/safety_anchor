@@ -1,0 +1,18 @@
+{
+  "name": "interpret_link",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bump": "devup",
+    "bump:minor": "devup -t minor",
+    "bump:major": "devup -t major",
+    "test": "node test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "devup": "^0.2.19"
+  }
+}
