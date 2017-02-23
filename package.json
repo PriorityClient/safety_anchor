@@ -1,8 +1,5 @@
 {
-  "name": "interpret_link",
-  "version": "0.0.0",
-  "description": "",
-  "main": "index.js",
+  "license": "ISC",
   "scripts": {
     "bump": "devup",
     "bump:minor": "devup -t minor",
@@ -11,7 +8,10 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "name": "interpret_link",
+  "version": "0.0.1",
+  "main": "index.js",
+  "description": "",
   "devDependencies": {
     "devup": "^0.2.19"
   }
