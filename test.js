@@ -20,10 +20,10 @@ process.exit(tester(0,
   ["priorityclient.com?test=best", '<a href="priorityclient.com?test=best">priorityclient.com?test=best</a>'],
   ["priorityclient.com?test=best.", '<a href="priorityclient.com?test=best">priorityclient.com?test=best</a>.'],
   ["priorityclient.com?test=best?", '<a href="priorityclient.com?test=best">priorityclient.com?test=best</a>?'],
-  ["http://priorityclient.com.",  '<a href="http://priorityclient.com">http://priorityclient.com</a>.'],
-  ["http://priorityclient.com?test=best", '<a href="http://priorityclient.com?test=best">http://priorityclient.com?test=best</a>'],
-  ["http://priorityclient.com?test=best.", '<a href="http://priorityclient.com?test=best">http://priorityclient.com?test=best</a>.'],
-  ["http://priorityclient.com?test=best?", '<a href="http://priorityclient.com?test=best">http://priorityclient.com?test=best</a>?']
-  ["http://priorityclient.com?test=best&better&better?", '<a href="http://priorityclient.com?test=best&better&better">http://priorityclient.com?test=best&better&better</a>?']
+  ["http://priorityclient.co.",  '<a href="http://priorityclient.co">http://priorityclient.co</a>.'],
+  ["http://priorityclient.co?test=best", '<a href="http://priorityclient.co?test=best">http://priorityclient.co?test=best</a>'],
+  ["http://priorityclient.co?test=best.", '<a href="http://priorityclient.co?test=best">http://priorityclient.co?test=best</a>.'],
+  ["http://priorityclient.co?test=best?", '<a href="http://priorityclient.co?test=best">http://priorityclient.co?test=best</a>?']
+  ["http://priorityclient.co?test=best&better&better?", '<a href="http://priorityclient.co?test=best&better&better">http://priorityclient.co?test=best&better&better</a>?']
 ));
 
