@@ -4,7 +4,10 @@ function tester(exit, phrase, ...remaining){
   if(!phrase) return exit
   const new_phrase = anchor_links(phrase[0]);
   if(new_phrase !== phrase[1]){
-    console.log(phrase[0], phrase[1], "|", new_phrase)
+    console.log("testing:", phrase[0]);
+    console.log("expected:", phrase[1]);
+    console.log("received:", new_phrase);
+    console.log("---");
     exit = 1;
   }
   return tester(exit, ...remaining);
