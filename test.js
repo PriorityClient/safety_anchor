@@ -14,19 +14,22 @@ function tester(exit, phrase, ...remaining){
 }
 
 process.exit(tester(0,
-  ["priorityclient.com", '<a href="http://priorityclient.com">priorityclient.com</a>'],
-  ["http://priorityclient.co.jp", '<a href="http://priorityclient.co.jp">http://priorityclient.co.jp</a>'],
-  ["priorityclient.com and http://priorityclient.co.jp", '<a href="http://priorityclient.com">priorityclient.com</a> and <a href="http://priorityclient.co.jp">http://priorityclient.co.jp</a>'],
-  ["priorityclient.com?", '<a href="http://priorityclient.com">priorityclient.com</a>?'],
-  ["franken.priorityclient.com.", '<a href="http://franken.priorityclient.com">franken.priorityclient.com</a>.'],
-  ["priorityclient.com.",  '<a href="http://priorityclient.com">priorityclient.com</a>.'],
-  ["priorityclient.com?test=best", '<a href="http://priorityclient.com?test=best">priorityclient.com?test=best</a>'],
-  ["priorityclient.com?test=best.", '<a href="http://priorityclient.com?test=best">priorityclient.com?test=best</a>.'],
-  ["priorityclient.com?test=best?", '<a href="http://priorityclient.com?test=best">priorityclient.com?test=best</a>?'],
-  ["http://priorityclient.co.",  '<a href="http://priorityclient.co">http://priorityclient.co</a>.'],
-  ["http://priorityclient.co?test=best", '<a href="http://priorityclient.co?test=best">http://priorityclient.co?test=best</a>'],
-  ["http://priorityclient.co?test=best.", '<a href="http://priorityclient.co?test=best">http://priorityclient.co?test=best</a>.'],
-  ["http://priorityclient.co?test=best?", '<a href="http://priorityclient.co?test=best">http://priorityclient.co?test=best</a>?']
-  ["http://priorityclient.co?test=best&better&better?", '<a href="http://priorityclient.co?test=best&better&better">http://priorityclient.co?test=best&better&better</a>?']
+  ["priorityclient.com/something", '<a target="_blank" href="http://priorityclient.com/something">priorityclient.com/something</a>'],
+  ["http://priorityclient.com/something", '<a target="_blank" href="http://priorityclient.com/something">http://priorityclient.com/something</a>'],
+  ["http://priorityclient.com/something and http://priorityclient.com/something/else", '<a target="_blank" href="http://priorityclient.com/something">http://priorityclient.com/something</a> and <a target="_blank" href="http://priorityclient.com/something/else">http://priorityclient.com/something/else</a>'],
+  ["priorityclient.com", '<a target="_blank" href="http://priorityclient.com">priorityclient.com</a>'],
+  ["http://priorityclient.co.jp", '<a target="_blank" href="http://priorityclient.co.jp">http://priorityclient.co.jp</a>'],
+  ["priorityclient.com and http://priorityclient.co.jp", '<a target="_blank" href="http://priorityclient.com">priorityclient.com</a> and <a target="_blank" href="http://priorityclient.co.jp">http://priorityclient.co.jp</a>'],
+  ["priorityclient.com?", '<a target="_blank" href="http://priorityclient.com">priorityclient.com</a>?'],
+  ["franken.priorityclient.com.", '<a target="_blank" href="http://franken.priorityclient.com">franken.priorityclient.com</a>.'],
+  ["priorityclient.com.",  '<a target="_blank" href="http://priorityclient.com">priorityclient.com</a>.'],
+  ["priorityclient.com?test=best", '<a target="_blank" href="http://priorityclient.com?test=best">priorityclient.com?test=best</a>'],
+  ["priorityclient.com?test=best.", '<a target="_blank" href="http://priorityclient.com?test=best">priorityclient.com?test=best</a>.'],
+  ["priorityclient.com?test=best?", '<a target="_blank" href="http://priorityclient.com?test=best">priorityclient.com?test=best</a>?'],
+  ["http://priorityclient.co.",  '<a target="_blank" href="http://priorityclient.co">http://priorityclient.co</a>.'],
+  ["http://priorityclient.co?test=best", '<a target="_blank" href="http://priorityclient.co?test=best">http://priorityclient.co?test=best</a>'],
+  ["http://priorityclient.co?test=best.", '<a target="_blank" href="http://priorityclient.co?test=best">http://priorityclient.co?test=best</a>.'],
+  ["http://priorityclient.co?test=best?", '<a target="_blank" href="http://priorityclient.co?test=best">http://priorityclient.co?test=best</a>?']
+  ["http://priorityclient.co?test=best&better&better?", '<a target="_blank" href="http://priorityclient.co?test=best&better&better">http://priorityclient.co?test=best&better&better</a>?']
 ));
 
