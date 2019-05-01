@@ -1,5 +1,5 @@
 
-function anchor_links(string){
+function anchor_links(string = ''){
   return string
           .replace(/</g, "&lt;")
           .replace(/>/g, "&gt;")
